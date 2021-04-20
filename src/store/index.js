@@ -1,24 +1,15 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Login from '../views/Login.vue'
+import Vuex from 'vuex'
 
-Vue.use(VueRouter)
+Vue.use(Vuex)
 
-const routes = [{
- path: '/',
- name: 'login',
- component: Login
-}, {
- path: '/home',
- name: 'Home',
- component: Home
-}]
-
-const router = new VueRouter({
- mode: 'history',
- base: process.env.BASE_URL,
- routes
+export default new Vuex.Store({
+  state: {
+  },
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+  }
 })
-
-export default router
